@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Joliez Agency Inc Talent Information Form</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+              .form-cover-content {
+                 width: 100% !important;
+              }
+            }
+    </style>
+</head>
+<body>
+
+<div class="form-cover-content">
+    <div class="title-content text-center">
+        <h3>Joliez Agency Inc Talent Information Form</h3>
+    </div>
+    <!--Form Start-->
+    <form action="mail.php" method="post" enctype="multipart/form-data" class="row g-3 needs-validation" novalidate>
+        <!--Country Location-->
+        <div class="col-md-12">
+            <label for="validationCustom04" class="form-label">Country location: </label>
+            <select class="form-select" name="CountryLocation" id="validationCustom04" required>
+              <option selected disabled value="">Select your location...</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="London">London</option>
+              <option value="Paris">Paris</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid location.
+            </div>
+        </div>
+        <!--Last Name-->
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Last name: </label>
+          <input type="text" class="form-control" name="Lname" id="validationCustom01" value="Biplob" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <!--First Name-->
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name: </label>
+          <input type="text" class="form-control" name="Fname" id="validationCustom01" value="Tanvir" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <!--Middle Name-->
+         <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Middle: </label>
+          <input type="text" class="form-control" name="Mname" id="validationCustom01" value="Ahmed" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <!--Address-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Address: </label>
+          <input type="text" class="form-control" name="Address" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Address inputed!
+          </div>
+        </div>
+        <!--City-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">City: </label>
+          <input type="text" class="form-control" name="City" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            City inputed!
+          </div>
+        </div>
+        <!--State-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">State: </label>
+          <input type="text" class="form-control" name="State" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            State inputed!
+          </div>
+        </div>
+        <!--Zip code-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Zip code: </label>
+          <input type="number" class="form-control" name="ZipCode" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Zip code inputed!
+          </div>
+        </div>
+        <!--Phone-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Phone(Mobile, Business, Other): </label>
+            <input type="text" class="form-control" name="Bphone" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Your phone number inputed!
+            </div>
+        </div>
+        <!--Email (Personal, Business, Other)-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Email(Personal, Business, Other): </label>
+            <input type="email" class="form-control" name="EmailPBO" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Your email inputed!
+            </div>
+        </div>
+        <!--Date of birth-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Date of birth: </label>
+          <input type="date" class="form-control" name="DateOfBirth" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Your date of birth inputed!
+          </div>
+        </div>
+        <!--Age-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Age: </label>
+          <input type="number" class="form-control" name="Age" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Your age inputed!
+          </div>
+        </div>
+        <!--Social security number-->
+        <div class="col-md-12">
+            <label for="validationCustom01" class="form-label">Social security number: </label>
+            <input type="number" class="form-control" name="SocialSecNum" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+                Social security number inputed!
+            </div>
+        </div>
+        <!--Headshot-->
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label">Headshot: </label>
+          <input type="file" class="form-control" name="Headshot" id="validationCustom01" value="File upload" required>
+          <div class="valid-feedback">
+            Headshot upload successfull!
+          </div>
+        </div>
+        <!--Government ID (Drivers License or State ID)-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Government ID (Drivers License or State ID): </label>
+            <input type="file" class="form-control" name="GovtId" id="validationCustom01" value="File upload" required>
+            <div class="valid-feedback">
+              Government ID (Drivers License or State ID) upload successfull!
+            </div>
+        </div>
+        <!--Social security card-->
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Social security card: </label>
+          <input type="file" class="form-control" name="SocialSecCard" id="validationCustom01" value="File upload" required>
+          <div class="valid-feedback">
+              Social security card upload successfull!
+          </div>
+        </div>
+        <!--Passport-->
+        <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Passport: </label>
+            &nbsp;
+            <div class="form-check form-check-inline">
+              <input class="form-check-input TravelCondition" type="checkbox" id="inlineCheckbox1">
+              <label class="form-check-label" for="inlineCheckbox1">If Traveling Outside The Country</label>
+            </div>
+            <input type="file" class="form-control TravelConditionItem" name="Passport" style="display: none;" id="validationCustom01" value="File upload" required>
+        </div>
+        <!--Are You A US Citizen? -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Are You A US Citizen? </label>
+          <input type="text" class="form-control" name="UsCitizen" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+               inputed!
+          </div>
+        </div>
+        <!--Do You Have A Green Card? -->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Do You Have A Green Card? </label>
+            <input type="text" class="form-control" name="DoYouHaveGreenCard" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                 inputed!
+            </div>
+        </div>
+        <!--How Did You Hear About US? -->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">How Did You Hear About US? </label>
+            <input type="text" class="form-control" name="HowYouHearAboutUS" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                 inputed!
+            </div>
+        </div>
+        <!--Gender -->
+        <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Gender: </label>
+            <select class="form-select" name="Gender" id="validationCustom04" required>
+              <option selected disabled value="">Select your gender...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Transgender Male">Transgender Male</option>
+              <option value="Transgender Female">Transgender Female</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select Gender.
+            </div>
+        </div>
+        <!--Height(Inches):-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Height(Inches): </label>
+          <input type="text" class="form-control" name="Heightinches" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Height inputed!
+          </div>
+        </div>
+        <!--Weight(Ibs):-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Weight(Ibs): </label>
+          <input type="text" class="form-control" name="weightIbs" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Weight inputed!
+          </div>
+        </div>
+        <!--Waist(Inches):-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Waist(Inches): </label>
+          <input type="text" class="form-control" name="WaistInches" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Waist inputed!
+          </div>
+        </div>
+        <!--Hips(Inches):-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Hips(Inches): </label>
+            <input type="text" class="form-control" name="HipsInches" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Hips inputed!
+            </div>
+        </div>
+        <!--Chest/Bust Size(Inches):-->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Chest/Bust Size(Inches): </label>
+          <input type="text" class="form-control" name="BustSize" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Hips inputed!
+          </div>
+        </div>
+        <!--Bust Cup(Inches)-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Bust Cup(Inches): </label>
+            <input type="text" class="form-control" name="BustCup" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Waist inputed!
+            </div>
+        </div>
+        <!--Hair Color:--> 
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Hair Color: </label>
+          <input type="text" class="form-control" name="HairColor" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Hips inputed!
+          </div>
+        </div>
+        <!--Hair Lenght(Inches)-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Hair Lenght(Inches): </label>
+            <br>
+            <input type="number" style="width: 20%;" name="HairlenghtInch" class="form-control form-check-inline" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Shoe size inputed!
+            </div>
+      
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="HairSizeOf" type="checkbox" id="inlineCheckbox1" value=",Short">
+                <label class="form-check-label" for="inlineCheckbox1">Short</label>
+            </div>          
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="HairSizeOfM" type="checkbox" id="inlineCheckbox2" value=",Medium">
+                <label class="form-check-label" for="inlineCheckbox2">Medium</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="HairSizeOfL" type="checkbox" id="inlineCheckbox1" value=",Long">
+                <label class="form-check-label" for="inlineCheckbox1">Long</label>
+              </div>  
+              <div class="form-check form-check-inline mt-2">
+                <input class="form-check-input" name="HairSizeOfVL" type="checkbox" id="inlineCheckbox2" value=",Very Long">
+                <label class="form-check-label" for="inlineCheckbox2">Very Long</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="HairSizeOfSL" type="checkbox" id="inlineCheckbox3" value=",Shoulder Lenght" >
+                <label class="form-check-label" for="inlineCheckbox3">Shoulder Lenght</label>
+              </div>        
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="HairSizeOfBd" type="checkbox" id="inlineCheckbox3" value=",Baid" >
+                <label class="form-check-label" for="inlineCheckbox3">Baid</label>
+              </div>
+        </div>
+        <!--Eye Color:-->
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Eye Color: </label>
+            <input type="text" class="form-control" name="EyeColor" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Eye Color inputed!
+              </div>
+        </div>
+        <!--Skin Color:-->
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Skin Color: </label>
+          <input type="text" class="form-control" name="SkinColor" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Hair Color inputed!
+          </div>
+        </div>
+        <!--Shoe Size:-->
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Shoe Size: </label>
+          <input type="text" class="form-control" name="ShoeSize" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Shoe size inputed!
+          </div>
+        </div>
+        <!--Dress Size:-->
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Dress Size: </label>
+            <input type="text" class="form-control" name="DressSize" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Dress  size inputed!
+            </div>
+        </div>
+        <!--Ethnic Descent: -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Ethnic Descent: </label>
+          <div class="valid-feedback">
+              Ethnic Descent inputed!
+          </div>
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="AfricanAmerican" id="inlineCheckbox1" value="African American">
+            <label class="form-check-label" for="inlineCheckbox1">African American</label>
+          </div>          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="AsianAmerican" id="inlineCheckbox2" value=", Asian American">
+            <label class="form-check-label" for="inlineCheckbox2"> Asian American</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="African" id="inlineCheckbox1" value=", African">
+            <label class="form-check-label" for="inlineCheckbox1">African</label>
+          </div>  
+          <div class="form-check form-check-inline mt-2">
+            <input class="form-check-input" type="checkbox" name="Asian" id="inlineCheckbox2" value=", Asian">
+            <label class="form-check-label" for="inlineCheckbox2">Asian</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Aboriginal" id="inlineCheckbox3" value=", Aboriginal" >
+            <label class="form-check-label" for="inlineCheckbox3">Aboriginal</label>
+          </div>        
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Caucasian" id="inlineCheckbox3" value=", Caucasian" >
+            <label class="form-check-label" for="inlineCheckbox3">Caucasian</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="EastermBlock" id="inlineCheckbox3" value=", Easterm Block" >
+            <label class="form-check-label" for="inlineCheckbox3">Easterm Block</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Mispanic" id="inlineCheckbox3" value=", Mispanic" >
+            <label class="form-check-label" for="inlineCheckbox3">Mispanic</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Indian" id="inlineCheckbox3" value=", Indian" >
+            <label class="form-check-label" for="inlineCheckbox3">Indian</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="MiddleEasterm" id="inlineCheckbox3" value=", Middle Easterm" >
+            <label class="form-check-label" for="inlineCheckbox3">Middle Easterm</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="NativeAmerican" id="inlineCheckbox3" value=", Native American" >
+            <label class="form-check-label" for="inlineCheckbox3">Native American</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Polynesian" id="inlineCheckbox3" value=", Polynesian" >
+            <label class="form-check-label" for="inlineCheckbox3">Polynesian</label>
+          </div>
+        </div>
+        <!--Experience Contact:-->
+        <div class="col-md-2">
+          <h3 class="h4">Experience:</h3>
+        </div>
+        <div class="col-md-10">
+          <div class="form-check">
+            <input class="form-check-input" name="NoExperience" type="checkbox" value="No Experience" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              No Experience
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="SomeExperience" type="checkbox" value=", Some Experience" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Some Experience
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="Experienced" type="checkbox" value=", Experienced" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Experienced
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="VeryExperienced" type="checkbox" value=", Very Experienced" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Very Experienced
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="Advenced" type="checkbox" value=", Advenced" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Advenced
+            </label>
+          </div>
+        </div>
+        <!--Professional Status:-->
+        <div class="col-md-12">
+          <label for="validationCustom02" class="form-label">Professional Status: &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Amateur" id="inlineCheckbox1" value="Amateur">
+            <label class="form-check-label" for="inlineCheckbox1">Amateur</label>
+          </div>          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="SemiProfessional" id="inlineCheckbox2" value=", Semi-Professional">
+            <label class="form-check-label" for="inlineCheckbox2">Semi-Professional</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Professional" id="inlineCheckbox1" value=", Professional">
+            <label class="form-check-label" for="inlineCheckbox1">Professional</label>
+          </div>  
+        </div>
+        <!--Modeling Fields Of Interest-->
+        <div class="col-md-3">
+            <label for="validationCustom02" class="form-label">Modeling Fields Of Interest: </label>
+        </div>
+        <div class="col-md-9">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="PrintEditorial" id="inlineCheckbox1" value="Print/Editorial">
+              <label class="form-check-label" for="inlineCheckbox1">Print/Editorial</label>
+            </div>          
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="FineArt" type="checkbox" id="inlineCheckbox2" value=", Fine Art">
+              <label class="form-check-label" for="inlineCheckbox2"> Fine Art</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Runway" type="checkbox" id="inlineCheckbox1" value=", Runway">
+              <label class="form-check-label" for="inlineCheckbox1">Runway</label>
+            </div>  
+            <div class="form-check form-check-inline mt-2">
+              <input class="form-check-input" name="Swimwear" type="checkbox" id="inlineCheckbox2" value=", Swimwear">
+              <label class="form-check-label" for="inlineCheckbox2">Swimwear</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Artists" type="checkbox" id="inlineCheckbox3" value=", Artists" >
+              <label class="form-check-label" for="inlineCheckbox3">Artists</label>
+            </div>        
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Fashion" type="checkbox" id="inlineCheckbox3" value=", Fashion" >
+              <label class="form-check-label" for="inlineCheckbox3">Fashion</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Hair" type="checkbox" id="inlineCheckbox3" value=", Hair" >
+              <label class="form-check-label" for="inlineCheckbox3">Hair</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="LingerieUnderwear" type="checkbox" id="inlineCheckbox3" value=", Lingerie/Underwear" >
+              <label class="form-check-label" for="inlineCheckbox3">Lingerie/Underwear</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="PartModeling" type="checkbox" id="inlineCheckbox3" value=", Part Modeling" >
+              <label class="form-check-label" for="inlineCheckbox3">Part Modeling</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Glamour" type="checkbox" id="inlineCheckbox3" value=", Glamour" >
+              <label class="form-check-label" for="inlineCheckbox3">Glamour</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="SportFitness" type="checkbox" id="inlineCheckbox3" value=", SportFitness" >
+              <label class="form-check-label" for="inlineCheckbox3">Sport/Fitness</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="ArtisticNude" type="checkbox" id="inlineCheckbox3" value=", Artistic Nude (18 & Older)" >
+              <label class="form-check-label" for="inlineCheckbox3">Artistic Nude (18 & Older)</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Web" type="checkbox" id="inlineCheckbox3" value=", Web" >
+              <label class="form-check-label" for="inlineCheckbox3">Web</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="Advertising" type="checkbox" id="inlineCheckbox3" value=", Advertising" >
+              <label class="form-check-label" for="inlineCheckbox3">Advertising</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="MagazinePrint" type="checkbox" id="inlineCheckbox3" value=", Magazine Print" >
+              <label class="form-check-label" for="inlineCheckbox3">Magazine Print</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="TradeshowAppearances" type="checkbox" id="inlineCheckbox3" value=", Tradeshow Appearances" >
+              <label class="form-check-label" for="inlineCheckbox3"> Tradeshow Appearances</label>
+            </div>
+        </div>
+        <!--Dance-->
+        <div class="col-md-12 d-flex">
+            <label for="validationCustom02" class="form-label">Dance: &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+              </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" name="Classical" type="checkbox" id="inlineCheckbox1" value="Classical">
+                <label class="form-check-label" for="inlineCheckbox1">Classical</label>
+              </div>          
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="ContemporaryHipHop" type="checkbox" id="inlineCheckbox2" value=", Contemporary (Hip Hop)">
+                <label class="form-check-label" for="inlineCheckbox2">Contemporary (Hip Hop) </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="OtherOption" type="checkbox" id="inlineCheckbox1" value=", Other">
+                <label class="form-check-label" for="inlineCheckbox1">Other</label>
+              </div>
+            </div>
+            <!--List Last 5 Jobs/Events-->
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">List Last 5 Jobs/Events: &nbsp; &nbsp; </label>
+              <div class="valid-feedback">
+            </div>
+            <br>
+            <div class="col-md-6 d-flex">
+              <label for="validationCustom02" class="form-label">1.</label>
+              <input type="text" class="form-control m-2" name="EventOne" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <label for="validationCustom02" class="form-label">2.</label>
+              <input type="text" class="form-control m-2" name="EventTwo" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <label for="validationCustom02" class="form-label">3.</label>
+              <input type="text" class="form-control m-2" name="EventThree" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <label for="validationCustom02" class="form-label">4.</label>
+              <input type="text" class="form-control m-2" name="EventFour" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <label for="validationCustom02" class="form-label">5.</label>
+              <input type="text" class="form-control m-2" name="EventFive" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+            </div>
+        </div>
+        <!--Do You Speak Another Language?-->
+        <div class="col-md-12 d-flex mt-3">
+            <label for="validationCustom01" class="form-label ">Do You Speak Another Language?</label>
+            <input type="text" class="form-control m-2 mt-0" name="YouSpeakAnotherLanguage" style="width: 50%" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+        <!--Professional Affiliarions: -->
+        <div class="col-md-12 mt-3">
+            <label for="validationCustom02" class="form-label">
+              Professional Affiliarions: &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+          </div>
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name = "AFTRA" type="checkbox" id="inlineCheckbox1" value="AFTRA">
+            <label class="form-check-label" for="inlineCheckbox1">AFTRA</label>
+          </div>          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="SAG" type="checkbox" id="inlineCheckbox2" value=", SAG">
+            <label class="form-check-label" for="inlineCheckbox2">SAG</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="NATAS" type="checkbox" id="inlineCheckbox1" value=", NATAS">
+            <label class="form-check-label" for="inlineCheckbox1">NATAS</label>
+          </div>  
+        </div>
+        <!--Worth Noting-->
+        <div class="col-md-12 mt-3">
+            <label for="validationCustom02" class="form-label">Worth Noting: &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+          </div>
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="Braces" type="checkbox" id="inlineCheckbox1" value="Braces">
+            <label class="form-check-label" for="inlineCheckbox1">Braces</label>
+          </div>          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="Glasses" type="checkbox" id="inlineCheckbox2" value=", Glasses">
+            <label class="form-check-label" for="inlineCheckbox2">Glasses </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="HearingImpaired" type="checkbox" id="inlineCheckbox1" value=", Hearing Impaired">
+            <label class="form-check-label" for="inlineCheckbox1">Hearing Impaired</label>
+          </div>  
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="Handicap" type="checkbox" id="inlineCheckbox1" value=", Handicap">
+            <label class="form-check-label" for="inlineCheckbox1">Handicap</label>
+          </div>
+        </div>
+        <!--Personal Web Page:-->
+        <div class="col-md-12 d-flex mt-3">
+            <label for="validationCustom01" class="form-label ">Personal Web Page:</label>
+            <input type="text" name="webPage" class="form-control m-2 mt-0" style="width: 70%" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-12 d-flex mt-3">
+            <label for="validationCustom01" class="form-label ">Special Information (Skin Blemishes, Tattoos, Etc)</label>
+            <input type="text" name="SpecialInformation" class="form-control m-2 mt-0" style="width: 60%" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-12 mt-3">
+           <label for="validationCustom01" class="form-label ">General Comments (Describe Your Interests, Types Of Assignments Etc.):</label>
+           <textarea name="GeneralComments" cols="30" rows="0" class="form-control m-2 mt-0" id="validationCustom01" value="" required> </textarea>
+           <div class="valid-feedback">
+             Looks good!
+           </div>
+        </div>
+        <div class="col-md-12 mt-3">
+            <label for="validationCustom01" class="form-label ">Credits/Awards/Background Info Etc.:
+              Include Any Jobs, Awards Or Acknowledgments Here.</label>
+            <textarea name="CreditsAwards" cols="30" rows="0" class="form-control m-2 mt-0" id="validationCustom01" value="" required></textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        
+        <!--Emergency Contact:-->
+        <div>
+            <h3 class="text-center pt-5">Emergency Contact:</h3>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Last name: </label>
+            <input type="text" class="form-control" name="lnameTwo" id="validationCustom01" value="Biplob" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name: </label>
+            <input type="text" class="form-control" name="fnameTwo" id="validationCustom01" value="Tanvir" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Middle: </label>
+            <input type="text" class="form-control" name="MiddleTwo" id="validationCustom01" value="Ahmed" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Address: </label>
+            <input type="text" class="form-control" name="AddressTwo" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Address inputed!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">City: </label>
+            <input type="text" class="form-control" name="CityTwo" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              City inputed!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">State: </label>
+            <input type="text" class="form-control" name="StateTwo" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              State inputed!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Zip code: </label>
+            <input type="number" class="form-control" name="ZipCodeTwo" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Zip code inputed!
+            </div>
+        </div>
+        <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Phone(Mobile, Business, Other): </label>
+              <input type="text" class="form-control" name="PhobeMBOTwo" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                  Your phone number inputed!
+              </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Email(Personal, Business, Other): </label>
+          <input type="email" class="form-control" name="EmailPBOTwo" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+              Your email inputed!
+          </div>
+        </div>
+        <div class="col-md-6">
+            <label for="" class="form-label">Relationship to you: </label>
+            <select class="form-select" name="SelectRelation" id="validationCustom04" required>
+              <option selected disabled value="">Select your related email...</option>
+              <option value="Mom">Mom</option>
+              <option value="Daddy">Daddy</option>
+              <option value="Sister">Sister</option>
+              <option value="Brother">Brother</option>
+              <option value="Spouse">Spouse</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a one.
+            </div>
+              <div class="valid-feedback">
+                  You inputed Relationship!
+            </div>
+        </div>
+        <!--Other-->
+        <div class="col-md-12">
+          <h3 class="text-center pt-5">Other:</h3>
+        </div>
+        <div class="col-md-12">
+            <label for="validationCustom02" class="form-label">Speech married: </label>
+            <input type="text" class="form-control" name="Speechmarried" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Your speech married inputed!
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label for="validationCustom02" class="form-label">Comment: </label>
+            <textarea name="CommentTwo" cols="30" rows="0" class="form-control" id="validationCustom02" value="" required></textarea>
+            <div class="valid-feedback">
+                Your stage name inputed!
+            </div>
+        </div>
+        <!--Q1-->
+        <div class="col-md-12 d-flex">
+          <label for="validationCustom02" class="form-label">Have you been convinced of a felony? &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+            </div>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input inlineRadio1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Yes">
+          <label class="form-check-label" for="inlineRadio1">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input inlineRadio2" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="No">
+          <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+        </div>
+        <div class="col-md-12">
+            <input type="text" class="form-control showPrivacy" style="display: none;" name="inlineRadio1Box" id="validationCustom02" value="">
+        </div>
+        <!--Q2-->
+        <div class="col-md-12 d-flex">
+          <label for="validationCustom02" class="form-label">Have you got any pending charges? &nbsp; &nbsp; </label>
+            <div class="valid-feedback">
+            </div>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input ItemIttoshow" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="Yes">
+          <label class="form-check-label" for="inlineRadio1">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input ItemIttoshowNo" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="No">
+          <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+        </div>
+        <div class="col-md-12">
+            <input type="text" class="form-control showPrivacyItem" style="display: none;" name="inlineRadio1Box1" id="validationCustom02" value="">
+        </div>
+        
+        <!--Model Acting Singing Dance Adult Entertainert:-->
+      <div>
+          <h3 class="text-center mt-5 mb-3">Model Acting Singing Dance Adult Entertainert:</h3>
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom02" class="form-label h4">Primary Talent: &nbsp;&nbsp;</label>
+      
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="ActingChkb" type="checkbox" id="inlineCheckbox1" value="Acting">
+          <label class="form-check-label" for="inlineCheckbox1">Acting</label>
+        </div>          
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="SingingChkb" type="checkbox" id="inlineCheckbox2" value=", Singing">
+          <label class="form-check-label" for="inlineCheckbox2">Singing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="DancingChkb" type="checkbox" id="inlineCheckbox1" value=", Dancing">
+          <label class="form-check-label" for="inlineCheckbox1">Dancing</label>
+        </div> 
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input AdultPermission" name="AdultEntertainerChkb" type="checkbox" id="inlineCheckbox1" value=", Adult Entertainer">
+          <label class="form-check-label" for="inlineCheckbox1">Adult Entertainer</label>
+        </div> 
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input AdultContent" style="display: none;" name="StripperChkb" type="checkbox" id="inlineCheckbox1" value=", Stripper">
+          <label class="form-check-label AdultContent" style="display: none;" for="inlineCheckbox1">Stripper</label>
+        </div>           
+        <div class="form-check form-check-inline">
+          <input class="form-check-input AdultContent" style="display: none;" name="NudeModelingChkb" type="checkbox" id="inlineCheckbox2" value=", Nude Modeling">
+          <label class="form-check-label AdultContent" style="display: none;" for="inlineCheckbox2">Nude Modeling</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input AdultContent" style="display: none;" name="PornVideosChkb" type="checkbox" id="inlineCheckbox1" value=", Porn Videos">
+          <label class="form-check-label AdultContent" style="display: none;" for="inlineCheckbox1">Porn Videos</label>
+        </div>
+      </div>
+      
+      <!--Tearms and Condition-->
+      <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="1">
+                I agree to the Agency <span id="ContentItem"> Submission Memorandum Of Understanding (MOU).</span>
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="card border-primary HeaderContent mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="">
+                I agree to the Agency <span id="ContentItem1"> Terms and Conditions (TAC).</span>
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="card border-secondary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-secondary">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="">
+                I agree to the Agency <span id="showContent12">Code Of Ethics (COE).</span>
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-success">
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="">
+                    I agree to the Agency <span id="showContent10">Privacy Policy (PP).</span>
+                  </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="card border-danger mb-3" style="max-width: 18rem; display: none;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-danger">
+                <h5 class="card-title">Danger card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+       <!--Model-->
+        
+        <div class="col-md-12">
+            <input type="submit" class="btn form-control bg-warning" value="Submit">
+        </div>
+        
+
+       <div class="col-md-12">
+           <h3 class="text-center h6">© 2022 Joliez Agency Inc.</h3>
+       </div>
+       
+    </form>
+</div>
+<!--Js-->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="./js/apps.js"></script>
+</body>
+</html>
